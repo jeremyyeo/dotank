@@ -1,26 +1,36 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="container">
+  {% include head.html %}
 
-  <h1 class="title">Posts</h1>
-  
-  {{ content }}
+  <body>
+    <section class="hero is-fullheight is-primary">
+      <div class="hero-head">
+        {% include header.html %}
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+           More than just a think tank. 
+          </h1>
+          <h2 class="subtitle">
+           A digital consulting, data and analytics agency.
+          </h2>
+        </div>
+      </div>
+      <div class="hero-foot">
+      <div class="columns">
+      <div class="column"> 
+        <p class="content has-text-centered">
+          Made with :broken_heart: in <strong>Wellington, New Zealand</strong> by <strong><a href="https://www.dotank.io/">doTank</a></strong>. 
+        </p>
+      </div>
+      <!-- <div class="column">
+        <p class="content is-pulled-right">test</p>
+      </div> -->
+    </div>
+      </div>
+    </section>  
+  </body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+</html>
