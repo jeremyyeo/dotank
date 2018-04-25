@@ -1,0 +1,10 @@
+---
+---
+// Import the initial variables
+@import "sass/utilities/initial-variables";
+@import "sass/utilities/functions";
+
+$navbar-height: 5rem;
+
+// Finally import the rest of bulma
+@import "bulma";
