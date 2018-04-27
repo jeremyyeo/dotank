@@ -1,7 +1,7 @@
 <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{site.url}}">
-          <strong>do[</strong><span class="icon is-large"><img src="{{ "/assets/tank.svg" | relative_url }}"></span><strong>]</strong>
+          <img src="{{ "/assets/doTank-light.svg" | relative_url }}"> 
         </a>
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
