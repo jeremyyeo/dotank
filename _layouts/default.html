@@ -4,6 +4,9 @@
   {% include head.html %}
 
   <body class="has-navbar-fixed-top">
+    {% if jekyll.environment == 'production' and site.google_tag_manager %}
+        {% include gtm-head.html %}
+    {% endif %}
 
     {% include header.html %}
    

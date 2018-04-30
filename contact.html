@@ -1,0 +1,51 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+menu: main
+---
+
+<p class="content">
+    If you have a project that could use our help or just have a question for us, feel free to use the contact form below or send an email to us at the email displayed above. We will respond to your enquiry within 2 business days.
+</p>
+
+<form action="https://formspree.io/hello@dotank.io" method="POST">
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <p class="control is-expanded has-icons-left">
+            <input class="input" type="text" name="name" placeholder="Name">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control is-expanded has-icons-left">
+            <input class="input" type="email" name="_replyto" placeholder="Email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <textarea class="textarea" placeholder="How can we help?"></textarea>
+      </div>
+    </div>
+    <input type="hidden" name="_next" value="{{ "/thank-you/" | relative_url }}" />
+    <input type="text" name="_gotcha" style="display:none">
+    <input type="hidden" name="_subject" value="Enquiry sent via www.dotank.io">
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input class="button is-primary" type="submit" value="Send">
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
