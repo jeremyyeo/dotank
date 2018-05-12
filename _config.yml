@@ -23,7 +23,7 @@ twitter_username: hellodotank
 # github_username:  jeremyyeo
 # linkedin_username: jeremyyeo
 
-# google_tag_manager: GTM-XXXX  # Google Tag Manager container ID.
+google_tag_manager: GTM-5XHNZVR  # Google Tag Manager container ID.
 
 # Build settings
 markdown: kramdown

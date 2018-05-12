@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {% include head.html %}
-
   <body>
-    {% if jekyll.environment == 'production' and site.google_tag_manager %}
-        {% include gtm-head.html %}
+    {% if site.google_tag_manager %}
+        {% include gtm-body.html %}
     {% endif %}
     <section class="hero is-fullheight is-primary">
       <div class="hero-head">
@@ -28,5 +26,4 @@
       </div>
     </section>  
   </body>
-
 </html>
